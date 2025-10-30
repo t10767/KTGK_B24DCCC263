@@ -1,0 +1,20 @@
+:root{ --container: 1100px }
+*{ box-sizing: border-box }
+body{ font-family: Inter, Arial, sans-serif; margin:0; color:#222 }
+.container{ max-width:var(--container); margin:0 auto }
+.navbar{ background:#f8f9fa; padding:10px 0; border-bottom:1px solid #eee }
+.nav-inner{ display:flex; justify-content:space-between; align-items:center }
+.links{ display:flex; gap:12px; align-items:center }
+.btn{ padding:8px 12px; border-radius:6px; border:1px solid #007bff; background:#007bff; color:white; cursor:pointer }
+.list-header{ display:flex; justify-content:space-between; align-items:center; gap:12px }
+.grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:16px; margin-top:16px }
+.card{ border:1px solid #eee; border-radius:8px; overflow:hidden; display:flex; flex-direction:column }
+.thumb{ width:100%; height:180px; object-fit:cover }
+.card-body{ padding:12px }
+.card-actions{ display:flex; gap:8px; margin-top:8px }
+.meta{ font-size:13px; color:#555 }
+.form{ max-width:800px }
+.form input, .form textarea, .form select{ width:100%; padding:8px; margin:6px 0 12px 0 }
+.form-actions{ display:flex; gap:8px }
+@media (max-width:900px){ .grid{ grid-template-columns: repeat(2, 1fr) } }
+@media (max-width:600px){ .grid{ grid-template-columns: 1fr } }
